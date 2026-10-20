@@ -3,6 +3,10 @@ import os
 import time
 import json
 
+# Ensure UTF-8 output on Windows PowerShell
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 # Add backend directory to sys.path so we can run directly or via HTTP
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "backend")))
 
