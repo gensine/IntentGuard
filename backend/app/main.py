@@ -40,6 +40,16 @@ intents_db: Dict[str, StructuredIntent] = {}
 pending_requests_db: Dict[str, Dict[str, Any]] = {}
 policy_settings = PolicySettings()
 
+@app.get("/")
+def root():
+    return {
+        "service": "IntentGuard Payment Intent Firewall",
+        "hackathon": "Citi & NPCI DRUNIX Hackathon 2026",
+        "status": "online",
+        "api_docs": "http://127.0.0.1:8000/docs",
+        "frontend_dashboard": "http://localhost:5173"
+    }
+
 @app.get("/health")
 def health_check():
     return {
