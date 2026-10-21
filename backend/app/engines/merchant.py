@@ -48,4 +48,4 @@ def evaluate_merchant(vpa: str) -> Tuple[float, Optional[str], Optional[Merchant
             return 0.75, f"Lookalike/Typosquatting alert: Payee '{vpa}' suspiciously imitates verified brand '{info.name}' ({known_vpa})", None
 
     # Completely unverified newly seen merchant
-    return 0.35, f"Payee '{vpa}' is not on the verified merchant registry", None
+    return 0.40, f"Payee '{vpa}' is not on the verified merchant registry", None

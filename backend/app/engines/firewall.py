@@ -87,7 +87,7 @@ class PaymentFirewallEngine:
         allowed_normalized = [p.lower() for p in intent.allowed_payees]
         if req.payee.lower() not in allowed_normalized:
             if not merchant_info or not merchant_info.is_verified:
-                risk_score += 0.35
+                risk_score += 0.40
                 reasons.append(f"Payee '{req.payee}' is not in your allowed merchant list.")
             else:
                 risk_score += 0.10
