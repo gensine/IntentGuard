@@ -1,6 +1,5 @@
 # 🛡️ IntentGuard: Payment Intent Firewall for AI Agents
 
-> **Hackathon:** DRUNIX Hackathon 2026 (Citi & NPCI)  
 > **Theme:** India's Payments Future  
 > **Category:** Fraud Prevention / Agentic Payments / Trust & Safety  
 
