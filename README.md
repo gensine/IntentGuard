@@ -101,6 +101,3 @@ python -m pytest backend/tests
 ```
 
 ---
-
-## 📜 License
-MIT License. Built for the Citi & NPCI DRUNIX Hackathon 2026.
